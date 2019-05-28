@@ -1,3 +1,13 @@
+<?php 
+
+$lastname = 'Mora R.';
+//$name = 'Carlos Mario ' . $lastname;
+$name = "Carlos Mario $lastname";
+
+$email = "contacto@carlosmora.biz";
+// var_dump($name);
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -21,7 +31,7 @@
         <img id="profile-picture" src="https://ui-avatars.com/api/?name=John+Doe&size=255" alt="">
       </div>
       <div class="col">
-	      <h1><?php echo "Carlos Mora"; ?></h1>
+	      <h1><?php echo $name ?></h1>
         <h2>PHP Developer</h2>
         <ul>
           <li>Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2a424f495e45586a474b434604494547">[email&#160;protected]</a></li>
