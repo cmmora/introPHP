@@ -20,12 +20,15 @@ $jobs = [
       //a continuacion se comienza a usar array dentro del array
   [
     'title' => 'Linux Sysadmin',
+    'description' => 'This is an awsome job!!!!!',
   ],
   [
     'title' => 'Python Developer',
+    'description' => 'Great and pleasure experience!!',
   ],
   [
-    'title' => 'DevOps'
+    'title' => 'DevOps',
+    'description' => 'Simply Perfect'
   ]
 ];
 
@@ -81,7 +84,7 @@ $jobs = [
           <ul>
             <li class="work-position">
               <h5><?php echo $jobs[0][title]; ?></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
+              <p><?php echo $jobs[0][description]; ?></p>
               <strong>Achievements:</strong>
               <ul>
                 <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
@@ -91,7 +94,7 @@ $jobs = [
             </li>
             <li class="work-position">
                 <h5><?php echo $jobs[1][title];?></h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
+                <p><?php echo $jobs[1][description]?></p>
                 <strong>Achievements:</strong>
                 <ul>
                   <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
@@ -101,7 +104,7 @@ $jobs = [
               </li>
               <li class="work-position">
                   <h5><?php echo $jobs[2][title]?></h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
+                  <p><?php echo $jobs[2][description] ?></p>
                   <strong>Achievements:</strong>
                   <ul>
                     <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
