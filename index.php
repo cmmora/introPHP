@@ -6,6 +6,13 @@ $name = "Carlos Mario $lastname";
 
 $email = "contacto@carlosmora.biz";
 // var_dump($name);
+$jobs = [
+  'Linux Sysadmin',
+  'Python Dev',
+  'DevOps'
+];
+
+// var_dump($jobs);
 ?>
 
 <!doctype html>
@@ -56,7 +63,7 @@ $email = "contacto@carlosmora.biz";
           <h3 class="border-bottom-gray" >Work Experience</h3>
           <ul>
             <li class="work-position">
-              <h5>PHP Developer</h5>
+              <h5><?php echo $jobs[0]; ?></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
               <strong>Achievements:</strong>
               <ul>
@@ -66,7 +73,7 @@ $email = "contacto@carlosmora.biz";
               </ul>
             </li>
             <li class="work-position">
-                <h5>PHP Developer</h5>
+                <h5><?php echo $jobs[1];?></h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
                 <strong>Achievements:</strong>
                 <ul>
@@ -76,7 +83,7 @@ $email = "contacto@carlosmora.biz";
                 </ul>
               </li>
               <li class="work-position">
-                  <h5>PHP Developer</h5>
+                  <h5><?php echo $jobs[2]?></h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
                   <strong>Achievements:</strong>
                   <ul>
