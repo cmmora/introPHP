@@ -7,9 +7,26 @@ $name = "Carlos Mario $lastname";
 $email = "contacto@carlosmora.biz";
 // var_dump($name);
 $jobs = [
-  'Linux Sysadmin',
-  'Python Dev',
-  'DevOps'
+  // 'Linux Sysadmin',
+  // 'Python Dev',
+  // 'DevOps'
+      // en el ejemplo anterior los indices se toman automaticamente
+  
+  // 0 => 'Linux Sysadmin',
+  // 1 => 'Python Developer',
+  // 2 => 'DevOp'
+      //En este ejemplo los indices de declararon explicitamente. 
+
+      //a continuacion se comienza a usar array dentro del array
+  [
+    'title' => 'Linux Sysadmin',
+  ],
+  [
+    'title' => 'Python Developer',
+  ],
+  [
+    'title' => 'DevOps'
+  ]
 ];
 
 // var_dump($jobs);
@@ -63,7 +80,7 @@ $jobs = [
           <h3 class="border-bottom-gray" >Work Experience</h3>
           <ul>
             <li class="work-position">
-              <h5><?php echo $jobs[0]; ?></h5>
+              <h5><?php echo $jobs[0][title]; ?></h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
               <strong>Achievements:</strong>
               <ul>
@@ -73,7 +90,7 @@ $jobs = [
               </ul>
             </li>
             <li class="work-position">
-                <h5><?php echo $jobs[1];?></h5>
+                <h5><?php echo $jobs[1][title];?></h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
                 <strong>Achievements:</strong>
                 <ul>
@@ -83,7 +100,7 @@ $jobs = [
                 </ul>
               </li>
               <li class="work-position">
-                  <h5><?php echo $jobs[2]?></h5>
+                  <h5><?php echo $jobs[2][title]?></h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.</p>
                   <strong>Achievements:</strong>
                   <ul>
