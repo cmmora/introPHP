@@ -94,8 +94,8 @@ $jobs = [
               $idx = 0;
               do {
                 echo '<li class="work-position">';
-                echo '<h5>' . $jobs[0]['title'] . '</h5>';
-                echo '<p>' . $jobs[0]['description'] . '</p>';
+                echo '<h5>' . $jobs[$idx]['title'] . '</h5>';
+                echo '<p>' . $jobs[$idx]['description'] . '</p>';
                 echo '<strong>Achievements:</strong>';
                 echo '<ul>';
                 echo '<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
@@ -108,26 +108,7 @@ $jobs = [
             ?>
 
            
-            <li class="work-position">
-                <h5><?php echo $jobs[1][title];?></h5>
-                <p><?php echo $jobs[1][description]?></p>
-                <strong>Achievements:</strong>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                </ul>
-              </li>
-              <li class="work-position">
-                  <h5><?php echo $jobs[2][title]?></h5>
-                  <p><?php echo $jobs[2][description] ?></p>
-                  <strong>Achievements:</strong>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                  </ul>
-                </li>
+            
           </ul>
         </div>
         <div>
