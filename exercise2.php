@@ -13,8 +13,16 @@ $paises = [
 
 ];
 
-var_dump($paises);
-
+// var_dump($paises);
+$var1 = 3;
+if($var1 > 2)
+{
+    echo "mayor";
+}
+else
+{
+    echo "menor";
+}
 
 ?>
 
@@ -27,15 +35,14 @@ var_dump($paises);
     <title>Ejercicio 2 - Arreglo paises y ciudades</title>
 </head>
 <body>
-    <p>Ciudades de <br><br> <?php 
+    <p>Ciudades de  <?php 
         foreach ($paises as $pais => $ciudades)
     {
-        echo "$pais: "."<br>";
+        echo "<br> " . "<br> " . " $pais: "."<br>";
             foreach ($ciudades as $ciudad)
             {
-                echo "$ciudad, ";
+                echo "$ciudad, " ;
             }
-        
     }?> </p>
 </body>
 </html>
