@@ -29,6 +29,10 @@ $jobs = [
   [
     'title' => 'DevOps',
     'description' => 'Simply Perfect'
+  ],
+  [
+    'title' => 'Gigolo',
+    'description' => 'complicated situation'
   ]
 ];
 
@@ -92,7 +96,7 @@ $jobs = [
 
             <?php
               
-              for($idx = 0; $idx < 3; $idx = $idx + 1) {
+              for($idx = 0; $idx < count($jobs); $idx++) {
                 echo '<li class="work-position">';
                 echo '<h5>' . $jobs[$idx]['title'] . '</h5>';
                 echo '<p>' . $jobs[$idx]['description'] . '</p>';
