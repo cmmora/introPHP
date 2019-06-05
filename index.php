@@ -91,8 +91,8 @@ $jobs = [
           <ul>
 
             <?php
-              $idx = 0;
-              do {
+              
+              for($idx = 0; $idx < 3; $idx = $idx + 1) {
                 echo '<li class="work-position">';
                 echo '<h5>' . $jobs[$idx]['title'] . '</h5>';
                 echo '<p>' . $jobs[$idx]['description'] . '</p>';
@@ -103,8 +103,8 @@ $jobs = [
                 echo '<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
                 echo '</ul>';
                 echo '</li>';
-                $idx = $idx + 1;
-              } while($idx < 3);
+                
+              }
             ?>
 
            
