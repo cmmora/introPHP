@@ -32,6 +32,13 @@ $jobs = [
   ]
 ];
 
+// $var1 = 1;
+// if($var1 > 2) {
+//   echo 'es mayor que 2';
+// } else {
+//   echo 'otra cosa';
+// }
+
 // var_dump($jobs);
 ?>
 
@@ -82,16 +89,25 @@ $jobs = [
         <div>
           <h3 class="border-bottom-gray" >Work Experience</h3>
           <ul>
-            <li class="work-position">
-              <h5><?php echo $jobs[0][title]; ?></h5>
-              <p><?php echo $jobs[0][description]; ?></p>
-              <strong>Achievements:</strong>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-                <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-              </ul>
-            </li>
+
+            <?php
+              $idx = 0;
+              do {
+                echo '<li class="work-position">';
+                echo '<h5>' . $jobs[0]['title'] . '</h5>';
+                echo '<p>' . $jobs[0]['description'] . '</p>';
+                echo '<strong>Achievements:</strong>';
+                echo '<ul>';
+                echo '<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                echo '<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                echo '<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                echo '</ul>';
+                echo '</li>';
+                $idx = $idx + 1;
+              } while($idx < 3);
+            ?>
+
+           
             <li class="work-position">
                 <h5><?php echo $jobs[1][title];?></h5>
                 <p><?php echo $jobs[1][description]?></p>
